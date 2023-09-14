@@ -9,6 +9,7 @@ while i < len(NAMES):
 for name in NAMES:
     print(name)
 
+# zip doesn't build a new list in memory.
 for name, age in zip(NAMES, AGES):
     print(f"{name} {age}")
 
@@ -19,3 +20,6 @@ for i in range(5):
     print(i)
 
 # enumerate
+# The enumerate object yields pairs containing a count (from start, which defaults to zero) and a value yielded by the iterable argument.
+for i, name in enumerate(NAMES):
+    print(f"{i} {name}")
